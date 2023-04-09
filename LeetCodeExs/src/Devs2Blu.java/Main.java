@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args) {
-        String str = "aa b c a";
-        int[] control = new int[2];
+
+    public static String contadorLetras(String stringIn) {
+        String str = stringIn;
+        int[] conew intntrol = [2];
         str = str.replaceAll("[,|.|'|!|?|*]*", "");
         String[] strAr = str.split(" ");
         ArrayList<char[]> charList = new ArrayList<>();
@@ -45,9 +46,13 @@ public class Main {
 
         }
         if (control[1] == 1) {
-            System.out.println("-1");
+            return "-1";
         } else {
-            System.out.println(strAr[control[0]]);
+            return strAr[control[0]];
         }
+    }
+
+    public static void main(String[] args) {
+        contadorLetras("Ola, tudo bem?");
     }
 }
